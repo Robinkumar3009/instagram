@@ -1,0 +1,21 @@
+Why we use react-router-dom
+
+react-router-dom is a library that is commonly used in React applications to handle routing and navigation. It provides a way to create single-page applications (SPAs) where different parts of the UI can be displayed based on the URL without requiring a full page reload. Here are some reasons why react-router-dom is used:
+
+Single-Page Application (SPA) Behavior: SPAs are designed to provide a seamless user experience by updating only the necessary parts of the page when navigating between different "pages." react-router-dom allows you to create this behavior by managing the routing and rendering of components based on the URL.
+
+Client-Side Routing: Traditional web applications often perform navigation by requesting new pages from the server. In contrast, react-router-dom enables client-side routing, where route changes are handled on the client side without requiring new server requests. This can lead to faster navigation and a smoother user experience.
+
+Component-Based Approach: React applications are built around the concept of components. With react-router-dom, each route can be associated with a specific component. This allows you to create a modular and organized code structure where different parts of your application are encapsulated within their respective components.
+
+Dynamic Routing: react-router-dom allows you to set up dynamic routing, meaning that routes can include parameters that are extracted from the URL. This is useful for creating routes that can handle varying data, such as user profiles or specific content items.
+
+Nested Routing: Complex applications often have nested components and views. react-router-dom supports nested routing, allowing you to define different levels of routes that correspond to different levels of nested components.
+
+URL Manipulation: The library provides methods to programmatically manipulate the URL and navigate between different routes. This is useful when you want to trigger route changes based on user interactions or application logic.
+
+History Management: react-router-dom maintains a history of route changes, which means that users can use the browser's back and forward buttons to navigate between different states of the application.
+
+Link and NavLink Components: The library offers components like Link and NavLink that enable you to create navigational links within your application. These components help ensure a consistent and accessible navigation experience.
+
+Route Guards: With react-router-dom, you can implement route guards to control access to specific routes based on user authentication or other criteria. This is crucial for securing certain parts of your application.
