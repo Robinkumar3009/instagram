@@ -12,6 +12,7 @@ router.get("/allPost",(req,res)=>{
 })
 
 router.get("/myPosts",loginRequire,(req,res)=>{
+    console.log("loginRequire",loginRequire);
    POST.find({postedBy:req.user._id}).populate("postedBy","_id name userName").then(myposts=>{
     res.json(myposts)
    })
@@ -34,6 +35,41 @@ router.post("/createPost",loginRequire,(req,res)=>{
    }}).catch((err)=>{
     res.status(500).json({message:err})
    })
+})
+
+
+router.put("/likes",loginRequire,(req,res)=>{
+    POST.findByIdAndUpdate(req.body.postId,{
+        $push:{likes:req.user._id}
+    },{
+        new:true
+    }).exec((err,result)=>{
+        if(err)
+        {
+            return res.status(422).json({err:err})
+         }
+         else
+         {
+            return res.json(result)
+         }
+    })
+})
+
+router.put("/unlike",loginRequire,(req,res)=>{
+    POST.findByIdAndUpdate(req.body.postId,{
+        $pull:{likes:req.user._id}
+    },{
+        new:true
+    }).exec((err,result)=>{
+if(err)
+{
+    return res.status(422).json({err:err})
+}
+else
+{
+    return res.json(result)
+}
+    })
 })
 
 
