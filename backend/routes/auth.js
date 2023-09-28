@@ -67,12 +67,13 @@ router.post("/signin",(req,res)=>{
                     return res.json({ error: "An error occurred while comparing passwords." });
                 }
                 if (result) {
-                    console.log('secret',secret);
+                    // console.log('secret',secret);
                     // Passwords match, user is authenticated
                     // return res.json({ message: "Successfully signed in." });
+                    const {_id,name,email,userName}=savedUser
                     const token=jwt.sign({_id:savedUser.id},secret)
                     // console.log(token);
-                    return res.json(token);
+                    return res.json({token,user:{_id,name,email,userName}});
                 } else {
                     return res.json({ error: "Invalid password." });
                 }

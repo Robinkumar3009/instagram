@@ -13,6 +13,10 @@ const postSchema=mongoose.Schema({
         require:true
     },
     likes:[{type:ObjectId,ref:"USER"}],
+    Comments:[{
+        Comment:{type:String},
+        postedBy:{type:ObjectId,ref:"USER"}
+    }],
     postedBy:{
         type:ObjectId,
         ref:"USER"
