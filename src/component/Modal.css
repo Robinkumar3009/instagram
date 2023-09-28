@@ -1,0 +1,79 @@
+.center{
+    position: fixed;
+    top: 50%;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+}
+
+.cancelBtn:hover{
+    box-shadow: none;
+    transform: translateY(-5px);
+}
+
+.cancelBtn{
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 11px 28px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: none;
+    color: #fcfcfc;
+    background:#2c3e50 ;
+    transition: all 0.25s ease;
+
+}
+
+.logoutBtn:hover{
+    box-shadow: none;
+    transform: translateY(-5px);
+}
+
+.logoutBtn{
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 11px 28px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: none;
+    color: #fcfcfc;
+    background:#2c3e50 ;
+    transition: all 0.25s ease;
+
+}
+
+
+.closebtn:hover{
+    box-shadow: none;
+    transform: translateY(-5px);
+}
+
+.closebtn{
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 11px 28px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: none;
+    color: #fcfcfc;
+    background:#eb0827 ;
+    transition: all 0.25s ease;
+
+}
+.modal{
+    width: 250px;
+    height: 170px;
+    background: rgb(249, 247, 243);
+    color: rgb(247, 245, 241);
+    z-index: 10;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,0.04);
+}
+
+.modalContent {
+    font-weight: 500;
+    padding: 15px;
+    color: black;
+}

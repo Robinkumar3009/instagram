@@ -1,0 +1,46 @@
+img{
+    width: 10%;
+    object-fit: contain;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 5px 5px #e0dcdc;
+}
+
+ul{
+    display: flex;
+    align-items: baseline;
+    
+}
+
+li{
+    list-style: none;
+    padding: 1px 15px;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sign-container{
+    padding-top: 100px;
+}
+
+.primaryBtn{
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 13px 25px;
+    font-size: 0.8rem;
+    border: none;
+    color: white;
+    background: #db183c;
+    border-radius: 15px;
+    margin-left: 20px;
+    
+}
+.primaryBtn:hover{
+    box-shadow: none;
+    transform: translateY(-5px);
+}
