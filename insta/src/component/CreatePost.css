@@ -1,0 +1,36 @@
+.createPost{
+    max-width: 500px;
+    height: max-content;
+    margin:10px auto;
+    border: 1px solid rgb(173,173,173);
+}
+.main-div{
+    border-top: 1px solid rgb(173,173,173);
+}
+.post-header{
+    display: flex;
+}
+.share-btn{
+    border:none;
+    background-color:none;
+    cursor: pointer;
+    color:#B7E1FD;
+    font-weight: bolder;
+}
+
+.details{
+    border-top: 1px solid rgb(173,173,173);
+}
+
+textarea{
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+#output{
+    width: 300px;
+    outline: none;
+    border: none;
+    margin:5px
+}
